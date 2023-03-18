@@ -1,25 +1,41 @@
 <html>
+
+    <head>
+        <title>Shorten!</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
 	<body>
 
 		<div class="login-box">
-			<h2>Login</h2>
+			<h2>Hola!</h2>
 			<form>
 				<div class="user-box">
-					<input type="text" name="" required="" />
-					<label>Username</label>
+					<input type="text" name="text" value id="pathinput" required="" />
+					<label>Url</label>
 				</div>
 				<div class="user-box">
-					<input type="password" name="" required="" />
-					<label>Password</label>
+					<input type="text" name="path" value id="pathinput" required="" />
+					<label>Slug</label>
 				</div>
-				<a href="#">
+				<a href="#" id="myinput" value="Shorten">
 					<span></span>
 					<span></span>
 					<span></span>
 					<span></span>
-					Submit
+					Shorten
 				</a>
 			</form>
+            <br>
+            <div class="msg row">
+                <div class="column left">
+                    <p id="message">x-x-x-x-x </p>
+                </div>
+                <div class="column right">
+                    <img src="copy.png" width="30px" alt="copy"  />
+
+                </div>
+            </div>
 		</div>
 
 	</body>

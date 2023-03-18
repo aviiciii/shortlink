@@ -72,7 +72,7 @@ body {
 	text-transform: uppercase;
 	overflow: hidden;
 	transition: 0.5s;
-	margin-top: 40px;
+	margin-top: 16px;
 	letter-spacing: 4px;
 }
 
@@ -165,4 +165,32 @@ body {
 	100% {
 		bottom: 100%;
 	}
+}
+
+
+.msg{
+    display:block;
+    background: #047b82;
+    color: #ffffff;
+    position: relative;
+    padding: 5px 20px;
+}
+
+.row {
+    display: flex;
+  }
+.column {
+    float: left;
+  }
+  
+  .left {
+    width: 90%;
+  }
+  
+  .right {
+    width: 10%;
+  }
+
+.column img{
+    padding: 10px;
 }

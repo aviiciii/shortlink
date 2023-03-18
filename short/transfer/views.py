@@ -16,11 +16,11 @@ def transfer(request):
         
         
         # link.laavesh.ml/we link id
-        url = "https://api.short.io/links/lnk_2MDV_9dCPkoujKaJ"
+        url = "https://api.short.io/links/lnk_2MIx_9dCPkouo4fY"
 
         # https://developers.short.io/docs/updating-an-existing-short-url
 
-        payload = json.dumps({"allowDuplicates": False, "domain": "link.laavesh.ml", "originalURL": longurl })
+        payload = json.dumps({"allowDuplicates": False, "domain": "we.laavesh.ml", "originalURL": longurl })
         headers = {
             'accept': "application/json",
             'content-type': "application/json",

@@ -219,15 +219,13 @@ body {
 	.login-box {
 		width: 100%;
 	}
+	.column img{
+		width: 26px;
+	}
 }
 
 @media screen and (max-width: 500px) {
-	body{
-		background: linear-gradient(#0c121d, #14212f);
-	}
-	.login-box {
-		width: 100%;
-	}
+	
 	.login-box h2 {
 		font-size: 20px;
 	}

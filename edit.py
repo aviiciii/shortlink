@@ -6,12 +6,15 @@ load_dotenv()
 url = "https://api.short.io/links/lnk_2MDV_9dCPkouhKSC"
 
 import json
-payload = json.dumps({"allowDuplicates": False, "domain": "link.laavesh.ml", "path": "trans" })
+
+# https://developers.short.io/docs/updating-an-existing-short-url
+
+payload = json.dumps({"allowDuplicates": False, "domain": "link.laavesh.ml", "originalURL": "google.com" })
 headers = {
     'accept': "application/json",
     'content-type': "application/json",
     'authorization': os.getenv("API_KEY")
-    }
+}
 
 response = requests.request("POST", url, data=payload, headers=headers)
 

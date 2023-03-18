@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 html {
 	height: 100%;
@@ -6,7 +6,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	background: linear-gradient(#141e30, #243b55);
 }
 
@@ -169,40 +169,41 @@ body {
 	}
 }
 
-
-.msg{
-    display:block;
-    background: #047b82;
-    color: #ffffff;
-    position: relative;
-    padding: 5px 20px;
+/* link url display */
+.msg {
+	display: block;
+	background: #047b82;
+	color: #ffffff;
+	position: relative;
+	padding: 5px 20px;
 }
-#message{
-    padding-top: 4px;
+#message {
+	padding-top: 4px;
 }
 
-
+/* two columns for link and clipboard icon */
 .row {
-    display: flex;
-  }
+	display: flex;
+}
 .column {
-    float: left;
-  }
-  
-  .left {
-    width: 90%;
-  }
-  
-  .right {
-    width: 10%;
-  }
+	float: left;
+}
 
-.column img{
-    padding: 10px;
+.left {
+	width: 90%;
+}
+
+.right {
+	width: 10%;
+}
+
+/* clipboard icon */
+.column img {
+	padding: 10px;
 }
 .column button {
-    border: none;
-    cursor: pointer;
-    appearance: none;
-    background-color: inherit;
-  }
+	border: none;
+	cursor: pointer;
+	appearance: none;
+	background-color: inherit;
+}

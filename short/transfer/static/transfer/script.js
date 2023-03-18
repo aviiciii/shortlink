@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // show link updated
             // Get the text field
             
-            let url = "link.laavesh.ml/we";
+            let url = "we.laavesh.ml";
             message.innerHTML = "Updated!";
             console.log("Updated!");
 

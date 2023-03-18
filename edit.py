@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-url = "https://api.short.io/links/lnk_2MDV_9dCPkouhKSC"
+url = "https://api.short.io/links/lnk_2MDV_9dCPkoujKaJ"
 
 import json
 

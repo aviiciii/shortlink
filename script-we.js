@@ -4,6 +4,9 @@ document.getElementById("myinput").onclick = function () {
     // get the link from the input
     var link = document.getElementById("linkinput").value;
 
+    let api_url="https://api.short.io/links/lnk_2MDV_9dCPkoujKaJ";
+    
+    
     // data to be sent to the API
     var data = {
         domain: "link.laavesh.ml",
@@ -11,18 +14,14 @@ document.getElementById("myinput").onclick = function () {
         allowDuplicates: false,
     };
 
-    // add custom path if it is given
-    if (document.getElementById("pathinput").value != "") {
-        data.path = document.getElementById("pathinput").value;
-    }
 
     // send the data to the API
-    fetch("https://api.short.cm/links/public", {
+    fetch(api_url, {
         method: "post",
         headers: {
             accept: "application/json",
             "Content-Type": "application/json",
-            authorization: "pk_ynFkEXQHXdWrijOF",
+            authorization: "sk_oNHGE7VRdKp0DWJc",
         },
         body: JSON.stringify(data),
     })
@@ -51,7 +50,6 @@ document.getElementById("myinput").onclick = function () {
 
     // clear the input fields
     document.getElementById("linkinput").value = "";
-    document.getElementById("pathinput").value = "";
 };
 
 
@@ -78,4 +76,4 @@ document.getElementById("copy").onclick = function () {
 
     
 
-}
+}   

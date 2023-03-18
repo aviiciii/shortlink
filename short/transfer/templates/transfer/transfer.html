@@ -15,23 +15,16 @@
 
         <!-- form -->
 		<div class="login-box">
-			<form method="post" action="{% url 'transfer' %}">
+			<form id="transfer_form" method="post" action="{% url 'transfer' %}">
                 {% csrf_token %}
-
                 <!-- long url -->
 				<div class="user-box">
 					<input type="text" name="text" value id="linkinput" required="" />
 					<label>Url</label>
 				</div>
 
-                <!-- path -->
-				<div class="user-box">
-					<input type="text" name="path" value id="pathinput" required="" />
-					<label>Slug</label>
-				</div>
-
                 <!-- button -->
-				<button type="submit" href="#" id="myinput" value="Shorten">
+				<a id="myinput" value="Shorten">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -45,16 +38,16 @@
             <!-- shortened url box -->
             <div class="msg row">
                 <div class="column left">
-                    <p id="message">link.laavesh.ml/ </p>
+                    <p id="message">link.laavesh.ml/we </p>
                 </div>
                 <div class="column right">
-                    <button name="copy" id="copy"><img  src="copy.png" width="30px" alt="copy"  /></button>
+                    <button name="copy" id="copy"><img  src="{% static 'transfer/copy.png' %}" width="30px" alt="copy"  /></button>
                 </div>
             </div>
 		</div>
 
         <!-- link script -->
-        <script src="script.js"></script>
+        <script src="{% static 'transfer/script.js' %}"></script>
 
 	</body>
 </html>

@@ -11,7 +11,7 @@
 			<h2>Hola!</h2>
 			<form>
 				<div class="user-box">
-					<input type="text" name="text" value id="pathinput" required="" />
+					<input type="text" name="text" value id="linkinput" required="" />
 					<label>Url</label>
 				</div>
 				<div class="user-box">
@@ -29,7 +29,7 @@
             <br>
             <div class="msg row">
                 <div class="column left">
-                    <p id="message">x-x-x-x-x </p>
+                    <p id="message">link.laavesh.ml/ </p>
                 </div>
                 <div class="column right">
                     <img src="copy.png" width="30px" alt="copy"  />
@@ -37,6 +37,49 @@
                 </div>
             </div>
 		</div>
+
+
+        <script>    
+			document.getElementById("myinput").onclick = function () {
+				var link = document.getElementById("linkinput").value;
+				var data = {
+					domain: "link.laavesh.ml",
+					originalURL: link,
+					allowDuplicates: false,
+				};
+                // add custom path if it exists
+                if (document.getElementById("pathinput").value != "") {
+                    data.path = document.getElementById("pathinput").value;
+                }
+				fetch("https://api.short.cm/links/public", {
+					method: "post",
+					headers: {
+						accept: "application/json",
+						"Content-Type": "application/json",
+						authorization: "pk_ynFkEXQHXdWrijOF",
+					},
+					body: JSON.stringify(data),
+				})
+					.then(function (response) {
+                        return response.json();
+					})
+					.then(function (data) {
+                        if (data.error) {
+                            throw data.error;
+                        }
+                        let url = String(data.shortURL);
+                        url =url.replace("https://", "");
+                        console.log(url);
+						document.getElementById("message").innerHTML =  url;
+					})
+                    .catch(function (error) {
+                        console.log(error);
+                        document.getElementById("message").innerHTML = error;
+                    });
+				document.getElementById("linkinput").value = "";
+                document.getElementById("pathinput").value = "";
+			};
+		</script>
 
 	</body>
 </html>

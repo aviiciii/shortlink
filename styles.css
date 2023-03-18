@@ -196,3 +196,9 @@ body {
 .column img{
     padding: 10px;
 }
+.column button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+  }

@@ -32,8 +32,7 @@
                     <p id="message">link.laavesh.ml/ </p>
                 </div>
                 <div class="column right">
-                    <img src="copy.png" width="30px" alt="copy"  />
-
+                    <button name="copy" id="copy"><img  src="copy.png" width="30px" alt="copy"  /></button>
                 </div>
             </div>
 		</div>
@@ -79,6 +78,21 @@
 				document.getElementById("linkinput").value = "";
                 document.getElementById("pathinput").value = "";
 			};
+
+            document.getElementById("copy").onclick = function () {
+                console.log("copy");
+                var copyText = document.getElementById("message");
+
+                // Select the text field
+                url = copyText.innerHTML;
+                
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(url);
+
+                // Alert the copied text
+                alert("Copied the text: " + url);
+            }
 		</script>
 
 	</body>

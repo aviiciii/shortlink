@@ -235,10 +235,11 @@ body {
 	}
 
 	.login-box {
-		width: 100%;
+		width: 80%;
 	}
 	.column img{
-		width: 26px;
+		width: 25px;
+		padding-top: 14px;
 	}
 }
 

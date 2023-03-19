@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Josefin Sans", sans-serif;
-	background: linear-gradient(#141e30, #243b55);
+	background: linear-gradient(#070a11, #121e2b);
 }
 
 .login-box {
@@ -17,10 +17,6 @@ body {
 	width: 620px;
 	padding: 40px;
 	transform: translate(-50%, -50%);
-	background: rgba(0, 0, 0, 0.5);
-	box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-	border-radius: 10px;
 }
 
 .login-box h2 {
@@ -206,6 +202,28 @@ body {
 	cursor: pointer;
 	appearance: none;
 	background-color: inherit;
+}
+
+/* ref links */
+.links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.links a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 6px 0px;
+	transition: 560ms;
+	
+}
+
+.links img{
+	width: 36px;
+	margin: 0 10px;
 }
 
 

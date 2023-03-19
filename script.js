@@ -75,7 +75,20 @@ document.getElementById("copy").onclick = function () {
     setTimeout(function () {
         message.innerHTML = url;
     }, 800); 
-
-    
-
 }
+
+
+// change github icon on hover
+
+
+function hover(element) {
+    // get child element
+    var child = element.children[0];
+    child.setAttribute('src', 'github2.png');
+  }
+  
+  function unhover(element) {
+    // get child element
+    var child = element.children[0];
+    child.setAttribute('src', 'github.png');
+  }

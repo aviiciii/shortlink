@@ -84,11 +84,11 @@ document.getElementById("copy").onclick = function () {
 function hover(element) {
     // get child element
     var child = element.children[0];
-    child.setAttribute('src', 'github2.png');
+    child.setAttribute('src', 'assets/github2.png');
   }
   
   function unhover(element) {
     // get child element
     var child = element.children[0];
-    child.setAttribute('src', 'github.png');
+    child.setAttribute('src', 'assets/github.png');
   }

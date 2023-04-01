@@ -241,10 +241,11 @@ body {
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
-	body{
-		background: linear-gradient(#0c121d, #14212f);
+	
+	.body{
+		max-width: 100vh;
 	}
-
+	
 	.login-box {
 		width: 80%;
 	}
@@ -252,10 +253,7 @@ body {
 		width: 25px;
 		padding-top: 14px;
 	}
-}
 
-@media screen and (max-width: 500px) {
-	
 	.login-box h2 {
 		font-size: 20px;
 	}
@@ -266,7 +264,15 @@ body {
 		font-size: 16px;
 	}
 	.login-box form a {
-		font-size: 12px;
+		font-size: 20px;
+	}
+
+	/* message url */
+	.msg {
+		font-size: 14px;
+	}
+	#message {
+		padding-top: 6px;
 	}
 }
 	

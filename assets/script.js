@@ -92,3 +92,21 @@ function hover(element) {
     var child = element.children[0];
     child.setAttribute('src', 'assets/github.png');
   }
+
+
+// on enter key press click #myinput
+document.addEventListener("keyup", function(event) {
+    // Check if enter key is pressed
+    if (event.key === "Enter") {
+        
+        event.preventDefault();
+        // Click the button
+        document.getElementById("myinput").click();
+
+        // remove focus from input fields
+        document.getElementById("linkinput").blur();
+        document.getElementById("pathinput").blur();
+    }
+    
+
+});

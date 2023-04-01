@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 
 html {
 	height: 100%;
@@ -6,8 +7,8 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Josefin Sans", sans-serif;
-	background: linear-gradient(#070a11, #121e2b);
+	font-family: 'VT323', monospace;
+	background: #f1ede2;
 }
 
 .login-box {
@@ -34,20 +35,23 @@ body {
 	width: 100%;
 	padding: 10px 0;
 	font-size: 20px;
-	color: #fff;
-	margin-bottom: 30px;
+	color: #000;
+	margin-bottom: 40px;
 	border: none;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #000;
 	outline: none;
 	background: transparent;
 }
+
+
+
 .login-box .user-box label {
 	position: absolute;
 	top: 0;
 	left: 0;
 	padding: 10px 0;
-	font-size: 20px;
-	color: #fff;
+	font-size: 26px;
+	color: #5e5e5e;
 	pointer-events: none;
 	transition: 0.5s;
 }
@@ -56,7 +60,7 @@ body {
 .login-box .user-box input:valid ~ label {
 	top: -20px;
 	left: 0;
-	color: #03e9f4;
+	color: #838383;
 	font-size: 16px;
 }
 
@@ -64,21 +68,22 @@ body {
 	position: relative;
 	display: inline-block;
 	padding: 18px 20px 15px 20px;
-	color: #03e9f4;
-	font-size: 14px;
+	color: #856a56;
+	font-size: 24px;
 	text-decoration: none;
 	text-transform: uppercase;
 	overflow: hidden;
 	transition: 0.5s;
 	margin-top: 16px;
 	letter-spacing: 4px;
+	margin-bottom: 20px;
 }
 
 .login-box a:hover {
-	background: #03e9f4;
+	background: #675343;
 	color: #fff;
 	border-radius: 5px;
-	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+	box-shadow: 0 0 4px #856a56, 0 0 16px #856a56, 0 0 40px #685342, 0 0 100px #856a56;
 }
 
 .login-box a span {
@@ -91,7 +96,7 @@ body {
 	left: -100%;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(90deg, transparent, #03e9f4);
+	background: linear-gradient(90deg, transparent, #675343);
 	animation: btn-anim1 1s linear infinite;
 }
 
@@ -110,7 +115,7 @@ body {
 	right: 0;
 	width: 2px;
 	height: 100%;
-	background: linear-gradient(180deg, transparent, #03e9f4);
+	background: linear-gradient(180deg, transparent, #675343);
 	animation: btn-anim2 1s linear infinite;
 	animation-delay: 0.25s;
 }
@@ -130,7 +135,7 @@ body {
 	right: -100%;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(270deg, transparent, #03e9f4);
+	background: linear-gradient(270deg, transparent, #675343);
 	animation: btn-anim3 1s linear infinite;
 	animation-delay: 0.5s;
 }
@@ -150,7 +155,7 @@ body {
 	left: 0;
 	width: 2px;
 	height: 100%;
-	background: linear-gradient(360deg, transparent, #03e9f4);
+	background: linear-gradient(360deg, transparent, #675343);
 	animation: btn-anim4 1s linear infinite;
 	animation-delay: 0.75s;
 }
@@ -168,13 +173,14 @@ body {
 /* link url display */
 .msg {
 	display: block;
-	background: #047b82;
+	background: #615235;
 	color: #ffffff;
 	position: relative;
 	padding: 5px 20px;
+	font-size: 18px;
 }
 #message {
-	padding-top: 4px;
+	padding-top: 2px;
 }
 
 /* two columns for link and clipboard icon */
@@ -221,6 +227,11 @@ body {
 	
 }
 
+.links a:hover{
+	box-shadow: none;
+	background: none;
+}
+
 .links img{
 	width: 36px;
 	margin: 0 10px;
@@ -230,10 +241,11 @@ body {
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
-	body{
-		background: linear-gradient(#0c121d, #14212f);
+	
+	.body{
+		max-width: 100vh;
 	}
-
+	
 	.login-box {
 		width: 80%;
 	}
@@ -241,10 +253,7 @@ body {
 		width: 25px;
 		padding-top: 14px;
 	}
-}
 
-@media screen and (max-width: 500px) {
-	
 	.login-box h2 {
 		font-size: 20px;
 	}
@@ -255,7 +264,15 @@ body {
 		font-size: 16px;
 	}
 	.login-box form a {
-		font-size: 12px;
+		font-size: 20px;
+	}
+
+	/* message url */
+	.msg {
+		font-size: 14px;
+	}
+	#message {
+		padding-top: 6px;
 	}
 }
 	

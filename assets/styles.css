@@ -19,12 +19,19 @@ body {
 	width: 18%;
 	margin-bottom: 30px;
 	/* not selectable */
+	pointer-events: none;
+	user-select: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
+	/* not draggable */
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
 
 }
 
@@ -71,6 +78,15 @@ body {
 	color: #5e5e5e;
 	pointer-events: none;
 	transition: 0.5s;
+	/* not selectable */
+	pointer-events: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	
 }
 
 .login-box .user-box input:focus ~ label,
@@ -94,6 +110,15 @@ body {
 	margin-top: 16px;
 	letter-spacing: 4px;
 	margin-bottom: 20px;
+	/* not selectable */
+	pointer-events: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	
 }
 
 .login-box a:hover {
@@ -214,6 +239,15 @@ body {
 
 .right {
 	width: 10%;
+	/* not selectable */
+	pointer-events: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	
 }
 
 /* clipboard icon */
@@ -233,15 +267,21 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 40px;
-	/* image not selectable */
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
-						supported by Chrome, Opera and Firefox */
-						
+	/* not selectable */
+	pointer-events: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	/* not draggable */
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+
 }
 
 .links a{

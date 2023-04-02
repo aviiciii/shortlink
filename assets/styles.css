@@ -11,6 +11,23 @@ body {
 	background: #f1ede2;
 }
 
+/* center logo */
+#logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 18%;
+	margin-bottom: 30px;
+	/* not selectable */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
 .login-box {
 	position: absolute;
 	top: 50%;
@@ -216,6 +233,15 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 40px;
+	/* image not selectable */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+						supported by Chrome, Opera and Firefox */
+						
 }
 
 .links a{
@@ -235,6 +261,7 @@ body {
 .links img{
 	width: 36px;
 	margin: 0 10px;
+	
 }
 
 

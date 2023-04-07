@@ -233,7 +233,6 @@ body {
 .right {
 	width: 10%;
 	/* not selectable */
-	pointer-events: none;
 	user-select: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;

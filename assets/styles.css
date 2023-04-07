@@ -266,7 +266,6 @@ body {
 	justify-content: center;
 	margin-top: 40px;
 	/* not selectable */
-	pointer-events: none;
 	user-select: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;

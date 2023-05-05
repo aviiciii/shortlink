@@ -4,14 +4,19 @@
 	--primary-color: #f1ede2;
 	--secondary-color: #615235;
 	--tertiary-color: #5e5e5e;
+	
 }
 
 /* write dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--primary-color: #000000;
-		--secondary-color: #615235;
-		--tertiary-color: #f1ede2;
+		--primary-color: #222222;
+		--secondary-color: #FBFAF5 ;
+		--tertiary-color: #737373;
+	}
+	.msg{
+		background-color: #121212;
+		color: var(--secondary-color);
 	}
 }
 

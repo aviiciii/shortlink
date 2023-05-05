@@ -13,22 +13,22 @@
 @media screen and (prefers-color-scheme: dark) {
 	:root {
 		--primary-color: #222222;
-		--secondary-color: #FBFAF5 ;
-		--tertiary-color: #737373;
+		--secondary-color: #f3e2b7 ;
+		--tertiary-color: #ffffff;
 	}
 	.msg{
-		background-color: #121212;
+		background-color: #171717;
 		color: var(--secondary-color);
 	}
 }
 
 .dark-mode {
 	--primary-color: #222222;
-	--secondary-color: #FBFAF5 ;
-	--tertiary-color: #737373;
+	--secondary-color: #f3e2b7 ;
+	--tertiary-color: #ffffff;
 }
 .dark-mode .msg{
-	background-color: #121212;
+	background-color: #171717;
 	color: var(--secondary-color);
 }
 

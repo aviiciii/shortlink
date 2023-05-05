@@ -117,7 +117,6 @@ document.addEventListener("keyup", function(event) {
 // get the toggle
 const toggle = document.getElementById('dark-mode-toggle');
 
-const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 function toggleDarkMode(state) {
     document.documentElement.classList.toggle("dark-mode", state);

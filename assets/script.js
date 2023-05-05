@@ -132,12 +132,18 @@ toggle.addEventListener('click', function() {
         // change logo
         document.getElementById("logo").setAttribute('src', 'assets/logo-dark.png');
 
+        // change github icon
+        document.getElementById("github-logo").setAttribute('src', 'assets/github-dark.png');
+
     } else {
         console.log('unchecked');
         toggleDarkMode(false);
 
         // change logo
         document.getElementById("logo").setAttribute('src', 'assets/logo.png');
+
+        // change github icon
+        document.getElementById("github-logo").setAttribute('src', 'assets/github.png');
     }
     
 });

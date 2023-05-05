@@ -110,3 +110,46 @@ document.addEventListener("keyup", function(event) {
     
 
 });
+
+
+// dark mode toggle
+
+// get the toggle
+const toggle = document.getElementById('dark-mode-toggle');
+
+
+function toggleDarkMode(state) {
+    document.documentElement.classList.toggle("dark-mode", state);
+}
+
+// when the toggle is clicked
+toggle.addEventListener('click', function() {
+    // if the toggle is checked
+    if (toggle.checked) {
+        console.log('checked');
+        toggleDarkMode(true);
+
+        // change logo
+        document.getElementById("logo").setAttribute('src', 'assets/logo-dark.png');
+
+        // change github icon
+        document.getElementById("github-logo").setAttribute('src', 'assets/github-dark.png');
+
+        // change copy-to-clipboard icon
+        document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy-dark.png');
+
+    } else {
+        console.log('unchecked');
+        toggleDarkMode(false);
+
+        // change logo
+        document.getElementById("logo").setAttribute('src', 'assets/logo.png');
+
+        // change github icon
+        document.getElementById("github-logo").setAttribute('src', 'assets/github.png');
+
+        // change copy-to-clipboard icon
+        document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy.png');
+    }
+    
+});

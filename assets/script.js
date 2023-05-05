@@ -110,3 +110,28 @@ document.addEventListener("keyup", function(event) {
     
 
 });
+
+
+// dark mode toggle
+
+// get the toggle
+const toggle = document.getElementById('dark-mode-toggle');
+
+const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+function toggleDarkMode(state) {
+    document.documentElement.classList.toggle("dark-mode", state);
+}
+
+// when the toggle is clicked
+toggle.addEventListener('click', function() {
+    // if the toggle is checked
+    if (toggle.checked) {
+        console.log('checked');
+        toggleDarkMode(true);
+    } else {
+        console.log('unchecked');
+        toggleDarkMode(false);
+    }
+    
+});

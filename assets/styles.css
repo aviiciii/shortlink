@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root{
+	color-scheme: light dark;
+
 	--primary-color: #f1ede2;
 	--secondary-color: #615235;
 	--tertiary-color: #5e5e5e;
@@ -8,7 +10,7 @@
 }
 
 /* write dark mode */
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
 	:root {
 		--primary-color: #222222;
 		--secondary-color: #FBFAF5 ;
@@ -18,6 +20,16 @@
 		background-color: #121212;
 		color: var(--secondary-color);
 	}
+}
+
+.dark-mode {
+	--primary-color: #222222;
+	--secondary-color: #FBFAF5 ;
+	--tertiary-color: #737373;
+}
+.dark-mode .msg{
+	background-color: #121212;
+	color: var(--secondary-color);
 }
 
 

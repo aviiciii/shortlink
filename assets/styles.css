@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+:root{
+	--primary-color: #f1ede2;
+	--secondary-color: #615235;
+	--tertiary-color: #5e5e5e;
+}
+
+/* write dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: #000000;
+		--secondary-color: #615235;
+		--tertiary-color: #f1ede2;
+	}
+}
+
 
 html {
 	height: 100%;
@@ -8,7 +23,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'VT323', monospace;
-	background: #f1ede2;
+	background: var(--primary-color);
 }
 
 /* center logo */
@@ -18,6 +33,7 @@ body {
 	margin-right: auto;
 	width: 18%;
 	margin-bottom: 30px;
+
 	/* not selectable */
 	pointer-events: none;
 	user-select: none;
@@ -31,7 +47,6 @@ body {
 	-khtml-user-drag: none;
 	-moz-user-drag: none;
 	-o-user-drag: none;
-	user-drag: none;
 
 }
 
@@ -47,7 +62,7 @@ body {
 .login-box h2 {
 	margin: 0 0 30px;
 	padding: 0;
-	color: #fff;
+	color: var(--tertiary-color);
 	text-align: center;
 }
 
@@ -59,10 +74,10 @@ body {
 	width: 100%;
 	padding: 10px 0;
 	font-size: 20px;
-	color: #000;
+	color: var(--tertiary-color);
 	margin-bottom: 40px;
 	border: none;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid var(--tertiary-color);
 	outline: none;
 	background: transparent;
 }
@@ -75,9 +90,10 @@ body {
 	left: 0;
 	padding: 10px 0;
 	font-size: 26px;
-	color: #5e5e5e;
+	color: var(--tertiary-color);
 	pointer-events: none;
 	transition: 0.5s;
+
 	/* not selectable */
 	pointer-events: none;
 	user-select: none;
@@ -93,7 +109,7 @@ body {
 .login-box .user-box input:valid ~ label {
 	top: -20px;
 	left: 0;
-	color: #838383;
+	color: var(--secondary-color);
 	font-size: 16px;
 }
 
@@ -101,7 +117,7 @@ body {
 	position: relative;
 	display: inline-block;
 	padding: 18px 20px 15px 20px;
-	color: #856a56;
+	color: var(--secondary-color);
 	font-size: 24px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -121,10 +137,10 @@ body {
 }
 
 .login-box a:hover {
-	background: #675343;
-	color: #fff;
+	background: var(--secondary-color);
+	color: var(--primary-color);
 	border-radius: 5px;
-	box-shadow: 0 0 4px #856a56, 0 0 16px #856a56, 0 0 40px #685342, 0 0 100px #856a56;
+	box-shadow: 0 0 4px var(--secondary-color), 0 0 16px var(--secondary-color), 0 0 40px var(--secondary-color), 0 0 100px var(--secondary-color);
 }
 
 .login-box a span {
@@ -137,7 +153,7 @@ body {
 	left: -100%;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(90deg, transparent, #675343);
+	background: linear-gradient(90deg, transparent, var(--secondary-color));
 	animation: btn-anim1 1s linear infinite;
 }
 
@@ -156,7 +172,7 @@ body {
 	right: 0;
 	width: 2px;
 	height: 100%;
-	background: linear-gradient(180deg, transparent, #675343);
+	background: linear-gradient(180deg, transparent, var(--secondary-color));
 	animation: btn-anim2 1s linear infinite;
 	animation-delay: 0.25s;
 }
@@ -176,7 +192,7 @@ body {
 	right: -100%;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(270deg, transparent, #675343);
+	background: linear-gradient(270deg, transparent, var(--secondary-color));
 	animation: btn-anim3 1s linear infinite;
 	animation-delay: 0.5s;
 }
@@ -196,7 +212,7 @@ body {
 	left: 0;
 	width: 2px;
 	height: 100%;
-	background: linear-gradient(360deg, transparent, #675343);
+	background: linear-gradient(360deg, transparent, var(--secondary-color));
 	animation: btn-anim4 1s linear infinite;
 	animation-delay: 0.75s;
 }
@@ -214,8 +230,8 @@ body {
 /* link url display */
 .msg {
 	display: block;
-	background: #615235;
-	color: #ffffff;
+	background: var(--secondary-color);
+	color: var(--primary-color);
 	position: relative;
 	padding: 5px 20px;
 	font-size: 18px;
@@ -282,7 +298,7 @@ body {
 }
 
 .links a{
-	color: #fff;
+	color: var(--primary-color);
 	font-size: 16px;
 	text-decoration: none;
 	padding: 6px 0px;

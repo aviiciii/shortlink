@@ -25,11 +25,11 @@
 .dark-mode {
 	--primary-color: #222222;
 	--secondary-color: #f3e2b7 ;
-	--tertiary-color: #ffffff;
+	--tertiary-color: #b7c9d8;
 }
 .dark-mode .msg{
 	background-color: #171717;
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 }
 
 
@@ -48,7 +48,7 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 18%;
+	width: 250px;
 	margin-bottom: 30px;
 
 	/* not selectable */

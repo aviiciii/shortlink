@@ -128,9 +128,16 @@ toggle.addEventListener('click', function() {
     if (toggle.checked) {
         console.log('checked');
         toggleDarkMode(true);
+
+        // change logo
+        document.getElementById("logo").setAttribute('src', 'assets/logo-dark.png');
+
     } else {
         console.log('unchecked');
         toggleDarkMode(false);
+
+        // change logo
+        document.getElementById("logo").setAttribute('src', 'assets/logo.png');
     }
     
 });

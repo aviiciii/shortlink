@@ -135,6 +135,9 @@ toggle.addEventListener('click', function() {
         // change github icon
         document.getElementById("github-logo").setAttribute('src', 'assets/github-dark.png');
 
+        // change copy-to-clipboard icon
+        document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy-dark.png');
+
     } else {
         console.log('unchecked');
         toggleDarkMode(false);
@@ -144,6 +147,9 @@ toggle.addEventListener('click', function() {
 
         // change github icon
         document.getElementById("github-logo").setAttribute('src', 'assets/github.png');
+
+        // change copy-to-clipboard icon
+        document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy.png');
     }
     
 });

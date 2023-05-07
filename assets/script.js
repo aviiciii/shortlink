@@ -83,13 +83,13 @@ document.getElementById("copy").onclick = function () {
     navigator.clipboard.writeText(url);
 
     // Alert copied to clipboard
-    message.innerHTML = "Copied!";
+    message.innerHTML = "Ctrl + C done :)";
     console.log("Copied!");
 
     // Change back to link after 800ms
     setTimeout(function () {
         message.innerHTML = url;
-    }, 800); 
+    }, 1200); 
 }
 
 

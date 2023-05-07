@@ -4,6 +4,21 @@ document.getElementById("myinput").onclick = function () {
     // get the link from the input
     var link = document.getElementById("linkinput").value;
 
+    // check if the link is empty
+    if (link == "" || link == null) {
+        // display error message
+        url = document.getElementById("message").innerHTML;
+
+        document.getElementById("message").innerHTML = "Url 404 :(";
+
+        setTimeout(function () {
+            message.innerHTML = url;
+        }, 2000); 
+        return;
+    }
+
+
+
     // data to be sent to the API
     var data = {
         domain: "link.laavesh.ml",
@@ -68,30 +83,15 @@ document.getElementById("copy").onclick = function () {
     navigator.clipboard.writeText(url);
 
     // Alert copied to clipboard
-    message.innerHTML = "Copied!";
+    message.innerHTML = "Ctrl + C done :)";
     console.log("Copied!");
 
     // Change back to link after 800ms
     setTimeout(function () {
         message.innerHTML = url;
-    }, 800); 
+    }, 1200); 
 }
 
-
-// change github icon on hover
-
-
-function hover(element) {
-    // get child element
-    var child = element.children[0];
-    child.setAttribute('src', 'assets/github2.png');
-  }
-  
-  function unhover(element) {
-    // get child element
-    var child = element.children[0];
-    child.setAttribute('src', 'assets/github.png');
-  }
 
 
 // on enter key press click #myinput
@@ -112,11 +112,24 @@ document.addEventListener("keyup", function(event) {
 });
 
 
+
+// change github icon on hover
+function hover(element) {
+    // get child element
+    var child = element.children[0];
+    child.setAttribute('src', 'assets/github2.png');
+  }
+
+  function unhover(element) {
+    // get child element
+    var child = element.children[0];
+    child.setAttribute('src', 'assets/github.png');
+  }
+
+
+
 // dark mode toggle
-
-// get the toggle
 const toggle = document.getElementById('dark-mode-toggle');
-
 
 function toggleDarkMode(state) {
     document.documentElement.classList.toggle("dark-mode", state);

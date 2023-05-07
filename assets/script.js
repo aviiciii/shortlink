@@ -93,21 +93,6 @@ document.getElementById("copy").onclick = function () {
 }
 
 
-// change github icon on hover
-
-
-function hover(element) {
-    // get child element
-    var child = element.children[0];
-    child.setAttribute('src', 'assets/github2.png');
-  }
-  
-  function unhover(element) {
-    // get child element
-    var child = element.children[0];
-    child.setAttribute('src', 'assets/github.png');
-  }
-
 
 // on enter key press click #myinput
 document.addEventListener("keyup", function(event) {
@@ -127,11 +112,24 @@ document.addEventListener("keyup", function(event) {
 });
 
 
+
+// change github icon on hover
+function hover(element) {
+    // get child element
+    var child = element.children[0];
+    child.setAttribute('src', 'assets/github2.png');
+  }
+
+  function unhover(element) {
+    // get child element
+    var child = element.children[0];
+    child.setAttribute('src', 'assets/github.png');
+  }
+
+
+
 // dark mode toggle
-
-// get the toggle
 const toggle = document.getElementById('dark-mode-toggle');
-
 
 function toggleDarkMode(state) {
     document.documentElement.classList.toggle("dark-mode", state);

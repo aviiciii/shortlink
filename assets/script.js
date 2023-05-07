@@ -4,6 +4,21 @@ document.getElementById("myinput").onclick = function () {
     // get the link from the input
     var link = document.getElementById("linkinput").value;
 
+    // check if the link is empty
+    if (link == "" || link == null) {
+        // display error message
+        url = document.getElementById("message").innerHTML;
+
+        document.getElementById("message").innerHTML = "Url 404 :(";
+
+        setTimeout(function () {
+            message.innerHTML = url;
+        }, 2000); 
+        return;
+    }
+
+
+
     // data to be sent to the API
     var data = {
         domain: "link.laavesh.ml",

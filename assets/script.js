@@ -134,6 +134,20 @@ function toggleDarkMode(state) {
     document.documentElement.classList.toggle("dark-mode", state);
 }
 
+// check preference
+const preference = localStorage.getItem('dark-mode');
+
+// if preference is true
+if (preference == 'true') {
+    // check the toggle
+    toggle.checked = true;
+    // enable dark mode
+    dark();
+} else {
+    // disable dark mode
+    light();
+}
+
 // when the toggle is clicked
 toggle.addEventListener('click', function() {
     // if the toggle is checked

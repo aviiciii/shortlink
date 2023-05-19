@@ -161,7 +161,8 @@ function dark() {
     // change copy-to-clipboard icon
     document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy-dark.png');
     
-    
+    // save preference
+    localStorage.setItem('dark-mode', 'true');
 };
 
 function light(){
@@ -175,6 +176,7 @@ function light(){
     // change copy-to-clipboard icon
     document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy.png');
 
-    
+    // save preference
+    localStorage.setItem('dark-mode', 'false');
 
 }

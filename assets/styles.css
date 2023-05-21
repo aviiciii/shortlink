@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
+/* page color scheme */
 :root{
 	color-scheme: light dark;
 
@@ -22,6 +24,7 @@
 	}
 }
 
+/* dark mode colors */
 .dark-mode {
 	--primary-color: #222222;
 	--secondary-color: #f3e2b7 ;
@@ -33,6 +36,8 @@
 }
 
 
+
+/* page layout */
 html {
 	height: 100%;
 }
@@ -67,6 +72,8 @@ body {
 
 }
 
+
+/* form container */
 .login-box {
 	position: absolute;
 	top: 50%;

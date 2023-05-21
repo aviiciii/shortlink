@@ -127,7 +127,6 @@ function hover(element) {
   }
 
 
-
 // dark mode toggle
 const toggle = document.getElementById('dark-mode-toggle');
 
@@ -135,34 +134,63 @@ function toggleDarkMode(state) {
     document.documentElement.classList.toggle("dark-mode", state);
 }
 
+// check preference
+const preference = localStorage.getItem('dark-mode');
+
+// if preference is true
+if (preference == 'true') {
+    // check the toggle
+    toggle.checked = true;
+    // enable dark mode
+    dark();
+} else {
+    // disable dark mode
+    light();
+}
+
 // when the toggle is clicked
 toggle.addEventListener('click', function() {
     // if the toggle is checked
     if (toggle.checked) {
         console.log('checked');
-        toggleDarkMode(true);
-
-        // change logo
-        document.getElementById("logo").setAttribute('src', 'assets/logo-dark.png');
-
-        // change github icon
-        document.getElementById("github-logo").setAttribute('src', 'assets/github-dark.png');
-
-        // change copy-to-clipboard icon
-        document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy-dark.png');
-
+        dark();
     } else {
         console.log('unchecked');
-        toggleDarkMode(false);
-
-        // change logo
-        document.getElementById("logo").setAttribute('src', 'assets/logo.png');
-
-        // change github icon
-        document.getElementById("github-logo").setAttribute('src', 'assets/github.png');
-
-        // change copy-to-clipboard icon
-        document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy.png');
+        light();
     }
     
 });
+
+
+function dark() {
+
+    toggleDarkMode(true);
+
+    // change logo
+    document.getElementById("logo").setAttribute('src', 'assets/logo-dark.png');
+
+    // change github icon
+    document.getElementById("github-logo").setAttribute('src', 'assets/github-dark.png');
+
+    // change copy-to-clipboard icon
+    document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy-dark.png');
+    
+    // save preference
+    localStorage.setItem('dark-mode', 'true');
+};
+
+function light(){
+    toggleDarkMode(false);
+    // change logo
+    document.getElementById("logo").setAttribute('src', 'assets/logo.png');
+
+    // change github icon
+    document.getElementById("github-logo").setAttribute('src', 'assets/github.png');
+
+    // change copy-to-clipboard icon
+    document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy.png');
+
+    // save preference
+    localStorage.setItem('dark-mode', 'false');
+
+}

@@ -317,7 +317,6 @@ body {
 	-khtml-user-drag: none;
 	-moz-user-drag: none;
 	-o-user-drag: none;
-	user-drag: none;
 
 }
 
@@ -380,3 +379,29 @@ body {
 	}
 }
 	
+
+/* preloader */
+
+body {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.8s ease-in;
+}
+
+.preloader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.preloader-text {
+	color: #fff;
+	font-size: 24px;
+}

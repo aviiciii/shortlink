@@ -21,6 +21,7 @@ document.getElementById("myinput").onclick = function () {
 
     // data to be sent to the API
     var data = {
+        // domain -- change here if you want to use your own domain
         domain: "link.laavesh.ml",
         originalURL: link,
         allowDuplicates: false,
@@ -37,6 +38,7 @@ document.getElementById("myinput").onclick = function () {
         headers: {
             accept: "application/json",
             "Content-Type": "application/json",
+            // API key -- change here if you want to use your own API key (public key)
             authorization: "pk_ynFkEXQHXdWrijOF",
         },
         body: JSON.stringify(data),

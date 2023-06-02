@@ -194,3 +194,11 @@ function light(){
     localStorage.setItem('dark-mode', 'false');
 
 }
+
+
+// preloader
+window.addEventListener('load', function() {
+    document.body.style.opacity = '1';
+    document.body.style.visibility = 'visible';
+    document.querySelector('.preloader').style.display = 'none';
+});

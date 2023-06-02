@@ -5,7 +5,7 @@ The Shorten Web Application allows users to generate shortened URLs for their lo
 ## Features
 
 - Generates short URLs for long URLs to make them more manageable and shareable.
-- Uses the short.io API service to handle URL shortening and redirection.
+- Uses the [short.io](https://short.io/) API service to handle URL shortening and redirection.
 - Provides a clean and intuitive user interface for quick URL shortening.
 
 ## Prerequisites
@@ -13,16 +13,17 @@ The Shorten Web Application allows users to generate shortened URLs for their lo
 Before getting started, make sure you have the following:
 
 - A domain or subdomain to host the application.
-- Registration of your domain/subdomain with short.io to obtain a public API key. (Completely free of cost)
+- Registration of your domain/subdomain with (short.io)[https://short.io/]. Completely free of cost)
 
 ## Installation and Setup
 
 1. Fork this repository to your GitHub account.
 2. Clone the forked repository to your local machine.
 3. Register your domain/subdomain with short.io to generate a public API key.
-4. Open the `assets/script.js` file in a text editor.
-5. Replace the placeholder API key in the `'authorization'` field with your short.io API key.
-6. Rename the domain `'link.laavesh.ml'` to your own domain or subdomain in the following files:
+4. Go to [api integrations](https://app.short.io/settings/integrations/api-key) in short.io and generate a public key.
+5. Open the `assets/script.js` file in a text editor.
+6. Replace the placeholder API key in the `'authorization'` field with your short.io API key.
+7. Rename the domain `'link.laavesh.ml'` to your own domain or subdomain in the following files:
    - `index.html`
    - `assets/script.js`
 

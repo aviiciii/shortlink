@@ -183,6 +183,7 @@ function dark() {
 
 function light(){
     toggleDarkMode(false);
+
     // change logo
     document.getElementById("logo").setAttribute('src', 'assets/logo.png');
 
@@ -200,7 +201,12 @@ function light(){
 
 // preloader
 window.addEventListener('load', function() {
+    
     document.body.style.opacity = '1';
     document.body.style.visibility = 'visible';
+    
     document.querySelector('.preloader').style.display = 'none';
+
+    // change transition effect for dark mode toggle
+    document.body.style.transition = 'background-color 0.4s ease-out';
 });

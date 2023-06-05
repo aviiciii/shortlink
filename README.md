@@ -13,7 +13,7 @@ The Shorten Web Application allows users to generate shortened URLs for their lo
 Before getting started, make sure you have the following:
 
 - A domain or subdomain to host the application.
-- Registration of your domain/subdomain with (short.io)[https://short.io/]. Completely free of cost)
+- Registration of your domain/subdomain with [short.io](https://short.io/). Completely free of cost)
 
 ## Installation and Setup
 

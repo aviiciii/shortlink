@@ -27,12 +27,14 @@
 /* dark mode colors */
 .dark-mode {
 	--primary-color: #222222;
-	--secondary-color: #f3e2b7 ;
+	--secondary-color: #f3e2b7;
 	--tertiary-color: #b7c9d8;
+	transition: background-color 0.5s ease-out;
 }
 .dark-mode .msg{
 	background-color: #171717;
 	color: var(--tertiary-color);
+	
 }
 
 
@@ -42,10 +44,19 @@ html {
 	height: 100%;
 }
 body {
+	/* preloader */
+	opacity: 0;
+	visibility: hidden;
+	transition: background-color 1s ease-in;
+
 	margin: 0;
 	padding: 0;
 	font-family: 'VT323', monospace;
-	background: var(--primary-color);
+	background-color: var(--primary-color);
+	
+	/* add transition */
+	/* transition: background-color 0.5s ease-out; */
+
 }
 
 /* center logo */
@@ -382,11 +393,7 @@ body {
 
 /* preloader */
 
-body {
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 0.8s ease-in;
-}
+
 
 .preloader {
 	display: flex;

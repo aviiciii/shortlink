@@ -183,6 +183,7 @@ function dark() {
 
 function light(){
     toggleDarkMode(false);
+
     // change logo
     document.getElementById("logo").setAttribute('src', 'assets/logo.png');
 
@@ -200,7 +201,12 @@ function light(){
 
 // preloader
 window.addEventListener('load', function() {
+    // wait for 1s
     document.body.style.opacity = '1';
     document.body.style.visibility = 'visible';
+    
     document.querySelector('.preloader').style.display = 'none';
+
+    // change transition effect
+    document.body.style.transition = 'all 0.5s ease-out';
 });

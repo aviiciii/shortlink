@@ -47,16 +47,13 @@ body {
 	/* preloader */
 	opacity: 0;
 	visibility: hidden;
-	transition: background-color 1s ease-in;
+	transition: background-color 0.5s ease-in;
 
+	/* page layout */
 	margin: 0;
 	padding: 0;
 	font-family: 'VT323', monospace;
 	background-color: var(--primary-color);
-	
-	/* add transition */
-	/* transition: background-color 0.5s ease-out; */
-
 }
 
 /* center logo */

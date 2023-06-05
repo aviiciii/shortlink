@@ -201,12 +201,12 @@ function light(){
 
 // preloader
 window.addEventListener('load', function() {
-    // wait for 1s
+    
     document.body.style.opacity = '1';
     document.body.style.visibility = 'visible';
     
     document.querySelector('.preloader').style.display = 'none';
 
-    // change transition effect
-    document.body.style.transition = 'all 0.5s ease-out';
+    // change transition effect for dark mode toggle
+    document.body.style.transition = 'background-color 0.4s ease-out';
 });

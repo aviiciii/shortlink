@@ -30,6 +30,10 @@
 	--secondary-color: #f3e2b7;
 	--tertiary-color: #b7c9d8;
 	transition: background-color 0.5s ease-out;
+
+	.dark-mode-toggle{
+		color: var(--tertiary-color);
+	}
 }
 .dark-mode .msg{
 	background-color: #171717;
@@ -408,4 +412,10 @@ body {
 .preloader-text {
 	color: #fff;
 	font-size: 24px;
+}
+
+/* dark mode toggle */
+
+.dark-mode-toggle{
+	color: var(--tertiary-color);
 }

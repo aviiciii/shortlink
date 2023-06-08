@@ -12,7 +12,7 @@
 }
 
 /* write dark mode */
-@media screen and (prefers-color-scheme: dark) {
+/* @media screen and (prefers-color-scheme: dark) {
 	:root {
 		--primary-color: #222222;
 		--secondary-color: #f3e2b7 ;
@@ -22,7 +22,7 @@
 		background-color: #171717;
 		color: var(--secondary-color);
 	}
-}
+} */
 
 /* dark mode colors */
 .dark-mode {

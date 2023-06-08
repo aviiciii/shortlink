@@ -418,4 +418,10 @@ body {
 
 .dark-mode-toggle{
 	color: var(--tertiary-color);
+	/* align to right */
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 20px 30px 10px 10px;
+	
 }

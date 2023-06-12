@@ -271,6 +271,7 @@ body {
 	position: relative;
 	padding: 5px 20px;
 	font-size: 18px;
+	transition: all 0.3s ease-in-out;
 }
 #message {
 	padding-top: 2px;

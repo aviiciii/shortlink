@@ -426,3 +426,25 @@ body {
 	margin: 20px 30px 10px 10px;
 	
 }
+
+
+/* highlight color */
+
+::selection {
+	background: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+#message::selection {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.dark-mode ::selection{
+	background: var(--secondary-color);
+}
+
+.dark-mode #message::selection{
+	background: var(--tertiary-color);
+	color: var(--primary-color);
+}

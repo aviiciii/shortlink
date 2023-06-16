@@ -286,11 +286,11 @@ body {
 }
 
 .left {
-	width: 90%;
+	width: 80%;
 }
 
 .right {
-	width: 10%;
+	width: 20%;
 	/* not selectable */
 	user-select: none;
 	-webkit-touch-callout: none;
@@ -425,4 +425,17 @@ body {
 	right: 0;
 	margin: 20px 30px 10px 10px;
 	
+}
+
+/* copy to clipboard img */
+#copy-to-clipboard{
+	width: 30px;
+}
+
+#qr{
+	width: 30px;
+}
+
+#qr-btn{
+	width: 30px;
 }

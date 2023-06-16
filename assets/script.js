@@ -210,3 +210,21 @@ window.addEventListener('load', function() {
     // change transition effect for dark mode toggle
     document.body.style.transition = 'background-color 0.4s ease-out';
 });
+
+
+// qr code
+const qr = document.getElementById('qr-btn');
+
+qr.addEventListener('click', function() {
+    // get the link
+    url = document.getElementById("message").innerHTML;
+
+    
+
+
+
+
+
+});
+
+

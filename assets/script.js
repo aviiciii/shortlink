@@ -182,6 +182,10 @@ function dark() {
     // change copy-to-clipboard icon
     document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy-dark.png');
     
+    // change qr icon
+    document.getElementById("qr").setAttribute('src', 'assets/qr-dark.png');
+
+
     // save preference
     localStorage.setItem('dark-mode', 'true');
 };
@@ -197,6 +201,9 @@ function light(){
 
     // change copy-to-clipboard icon
     document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy.png');
+
+    // change qr icon
+    document.getElementById("qr").setAttribute('src', 'assets/qr.png');
 
     // save preference
     localStorage.setItem('dark-mode', 'false');

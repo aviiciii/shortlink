@@ -54,6 +54,11 @@ document.getElementById("myinput").onclick = function () {
         }
         // get shortened link
         let url = String(data.shortURL);
+
+        // add url to qr code img src
+        qrimg = document.getElementById("qr-img");
+        qrimg.setAttribute('src', 'https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=' + url);
+
         // remove https://
         url =url.replace("https://", "");
         // display shortened link
@@ -212,20 +217,10 @@ window.addEventListener('load', function() {
 });
 
 
-// qr code
-const qr = document.getElementById('qr-btn');
-
-qr.addEventListener('click', function() {
-    // get the link
-    url = document.getElementById("message").innerHTML;
-
-    
 
 
 
-
-
-});
+// modal for qr code
 
 // Get the modal
 var modal = document.getElementById("myModal");

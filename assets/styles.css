@@ -286,11 +286,11 @@ body {
 }
 
 .left {
-	width: 90%;
+	width: 80%;
 }
 
 .right {
-	width: 10%;
+	width: 20%;
 	/* not selectable */
 	user-select: none;
 	-webkit-touch-callout: none;
@@ -425,4 +425,75 @@ body {
 	right: 0;
 	margin: 20px 30px 10px 10px;
 	
+}
+
+/* copy to clipboard img */
+#copy{
+	width: fit-content;
+	padding: 0;
+	margin: 0;
+}
+#copy-to-clipboard{
+	width: 30px;
+}
+
+#qr{
+	width: 30px;
+}
+
+#qr-btn{
+	width: fit-content;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* modal */
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+/* Modal Content/Box */
+.modal-content {
+	background-color: var(--primary-color);
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 270px; /* Could be more or less, depending on screen size */
+	height: 270px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dark-mode .modal-content {
+	background-color: #f1ede2;
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }

@@ -57,7 +57,7 @@ document.getElementById("myinput").onclick = function () {
 
         // add url to qr code img src
         qrimg = document.getElementById("qr-img");
-        qrimg.setAttribute('src', 'https://api.qrserver.com/v1/create-qr-code/?size=250x250&margin=&bgcolor=f1ede2&data=' + url);
+        qrimg.setAttribute('src', 'https://api.qrserver.com/v1/create-qr-code/?size=250x250&qzone=2&bgcolor=f1ede2&data=' + url);
 
         // remove https://
         url =url.replace("https://", "");

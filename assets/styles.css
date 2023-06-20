@@ -362,8 +362,16 @@ body {
 		max-width: 100vh;
 	}
 	
+	/* logo */
+	#logo {
+		width: 52vw;
+	}
+
 	.login-box {
+		margin-top: 6vh;
 		width: 80%;
+		padding: 0;
+		margin:40px auto;
 	}
 	.column img{
 		width: 25px;
@@ -390,6 +398,13 @@ body {
 	#message {
 		padding-top: 6px;
 	}
+
+	/* dark mode toggle */
+	.dark-mode-toggle {
+		margin: 10px 10px 0px 0px;
+	}
+
+
 }
 	
 
@@ -424,6 +439,7 @@ body {
 	top: 0;
 	right: 0;
 	margin: 20px 30px 10px 10px;
+	width: auto;
 	
 }
 

@@ -354,43 +354,6 @@ body {
 }
 
 
-/* Media Queries */
-
-@media screen and (max-width: 600px) {
-	
-	.body{
-		max-width: 100vh;
-	}
-	
-	.login-box {
-		width: 80%;
-	}
-	.column img{
-		width: 25px;
-		padding-top: 14px;
-	}
-
-	.login-box h2 {
-		font-size: 20px;
-	}
-	.login-box .user-box input {
-		font-size: 16px;
-	}
-	.login-box .user-box label {
-		font-size: 16px;
-	}
-	.login-box form a {
-		font-size: 20px;
-	}
-
-	/* message url */
-	.msg {
-		font-size: 14px;
-	}
-	#message {
-		padding-top: 6px;
-	}
-}
 	
 
 /* preloader */
@@ -424,6 +387,7 @@ body {
 	top: 0;
 	right: 0;
 	margin: 20px 30px 10px 10px;
+	width: auto;
 	
 }
 
@@ -496,4 +460,73 @@ body {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+	
+	.body{
+		max-width: 100vh;
+	}
+	
+	/* logo */
+	#logo {
+		width: 52vw;
+	}
+
+	.login-box {
+		margin-top: 6vh;
+		width: 80%;
+		padding: 0;
+		margin:40px auto;
+	}
+	
+
+	.login-box h2 {
+		font-size: 20px;
+	}
+	.login-box .user-box input {
+		font-size: 16px;
+	}
+	.login-box .user-box label {
+		font-size: 16px;
+	}
+	.login-box form a {
+		font-size: 20px;
+	}
+
+	/* message url */
+	.msg {
+		font-size: 14px;
+	}
+	#message {
+		padding-top: 6px;
+	}
+
+	/* dark mode toggle */
+	.dark-mode-toggle {
+		margin: 10px 10px 0px 0px;
+	}
+
+	#qr {
+		width: 22px;
+		padding: 5px;
+		margin-top: 8px;
+	}
+
+	#copy-to-clipboard {
+		width: 22px;
+		padding: 5px;
+	}
+
+	.left{
+		width: 70%;
+	}
+	.right{
+		width: 30%;
+	}
+
 }

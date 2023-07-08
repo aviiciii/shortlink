@@ -54,6 +54,11 @@ document.getElementById("myinput").onclick = function () {
         }
         // get shortened link
         let url = String(data.shortURL);
+
+        // add url to qr code img src
+        qrimg = document.getElementById("qr-img");
+        qrimg.setAttribute('src', 'https://api.qrserver.com/v1/create-qr-code/?size=250x250&qzone=2&bgcolor=f1ede2&data=' + url);
+
         // remove https://
         url =url.replace("https://", "");
         // display shortened link
@@ -177,6 +182,10 @@ function dark() {
     // change copy-to-clipboard icon
     document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy-dark.png');
     
+    // change qr icon
+    document.getElementById("qr").setAttribute('src', 'assets/qr-dark.png');
+
+
     // save preference
     localStorage.setItem('dark-mode', 'true');
 };
@@ -192,6 +201,9 @@ function light(){
 
     // change copy-to-clipboard icon
     document.getElementById("copy-to-clipboard").setAttribute('src', 'assets/copy.png');
+
+    // change qr icon
+    document.getElementById("qr").setAttribute('src', 'assets/qr.png');
 
     // save preference
     localStorage.setItem('dark-mode', 'false');
@@ -210,3 +222,35 @@ window.addEventListener('load', function() {
     // change transition effect for dark mode toggle
     document.body.style.transition = 'background-color 0.4s ease-out';
 });
+
+
+
+
+
+// modal for qr code
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("qr-btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

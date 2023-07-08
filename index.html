@@ -72,7 +72,8 @@
                     <p id="message">link.laavesh.ml/ </p>
                 </div>
                 <div class="column right">
-                    <button name="copy" id="copy"><img id="copy-to-clipboard" src="assets\copy.png" width="30px" alt="copy"  /></button>
+                    <button name="qr-btn" id="qr-btn"> <img id="qr"  src="assets/qr.png" alt="qr" /> </button>
+                    <button name="copy" id="copy"><img id="copy-to-clipboard" src="assets/copy.png" alt="copy"  /></button>
                 </div>
             </div>
 
@@ -84,8 +85,21 @@
 
 		</div>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"></span>
+                <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?data=https://link.laavesh.ml/&qzone=2&size=250x250&bgcolor=f1ede2" />
+            </div>
+        
+        </div>
+
         <!-- link script -->
         <script src="assets/script.js"></script>
+
+        
 
 	</body>
 </html>

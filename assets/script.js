@@ -90,7 +90,7 @@ document.getElementById("copy").onclick = function () {
     navigator.clipboard.writeText(url);
 
     // Alert copied to clipboard
-    message.innerHTML = "Ctrl + C done :)";
+    message.innerHTML = "Go paste !";
     console.log("Copied!");
 
     // Change back to link after 800ms

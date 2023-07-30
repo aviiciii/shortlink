@@ -22,7 +22,7 @@ document.getElementById("myinput").onclick = function () {
     // data to be sent to the API
     var data = {
         // domain -- change here if you want to use your own domain
-        domain: "link.laavesh.ml",
+        domain: "link.laavesh.co",
         originalURL: link,
         allowDuplicates: false,
     };

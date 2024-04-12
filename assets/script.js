@@ -135,11 +135,15 @@ function unhover(element) {
 
 // dark mode toggle
 const toggle = document.getElementById("dark-mode-toggle");
-// check preference
-const preference = localStorage.getItem("dark-mode");
-// check browser preference
-// const preference = window.matchMedia("(prefers-color-scheme: dark)");
-// console.log(preference);
+
+
+// check website preference
+var preference = localStorage.getItem("dark-mode");
+
+if (preference === null) {
+	preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+console.log(preference);
 
 
 function toggleDarkMode(state) {
@@ -148,7 +152,7 @@ function toggleDarkMode(state) {
 
 
 // if preference is true
-if (preference == "true") {
+if (preference === true || preference === "true") {
 	// check the toggle
 	toggle.checked = true;
 	// enable dark mode
@@ -164,9 +168,14 @@ toggle.addEventListener("click", function () {
 	if (toggle.checked) {
 		console.log("checked");
 		dark();
+        // save preference
+        save_preference();
+
 	} else {
 		console.log("unchecked");
 		light();
+        // save preference
+        save_preference();
 	}
 });
 
@@ -185,8 +194,7 @@ function dark() {
 	// change qr icon
 	document.getElementById("qr").setAttribute("src", "assets/qr-dark.png");
 
-	// save preference
-	localStorage.setItem("dark-mode", "true");
+	
 }
 
 function light() {
@@ -204,9 +212,12 @@ function light() {
 	// change qr icon
 	document.getElementById("qr").setAttribute("src", "assets/qr.png");
 
-	// save preference
-	localStorage.setItem("dark-mode", "false");
+	
 }
+// call to save preference
+save_preference = () => {
+	localStorage.setItem("dark-mode", toggle.checked);
+};
 
 // ---------------- QR CODE MODAL ----------------
 

@@ -19,7 +19,7 @@
 			document.getElementById("myinput").onclick = function () {
 				var link = document.getElementById("linkinput").value;
 				var data = {
-					domain: "link.laavesh.co",
+					domain: "link.laavesh.xyz",
 					originalURL: link,
 					allowDuplicates: false,
 				};
@@ -27,12 +27,12 @@
                 if (document.getElementById("pathinput").value != "") {
                     data.path = document.getElementById("pathinput").value;
                 }
-				fetch("https://api.short.cm/links/public", {
+				fetch("https://api.short.io/links/public", {
 					method: "post",
 					headers: {
 						accept: "application/json",
 						"Content-Type": "application/json",
-						authorization: "pk_ynFkEXQHXdWrijOF",
+						authorization: "pk_M8NSz2WK3m9gHdH2",
 					},
 					body: JSON.stringify(data),
 				})

@@ -22,7 +22,7 @@ document.getElementById("myinput").onclick = function () {
     // data to be sent to the API
     var data = {
         // domain -- change here if you want to use your own domain
-        domain: "link.laavesh.co",
+        domain: "link.laavesh.xyz",
         originalURL: link,
         allowDuplicates: false,
     };
@@ -33,13 +33,13 @@ document.getElementById("myinput").onclick = function () {
     }
 
     // send the data to the API
-    fetch("https://api.short.cm/links/public", {
+    fetch("https://api.short.io/links/public", {
         method: "post",
         headers: {
             accept: "application/json",
             "Content-Type": "application/json",
             // API key -- change here if you want to use your own API key (public key)
-            authorization: "pk_ynFkEXQHXdWrijOF",
+            authorization: "pk_M8NSz2WK3m9gHdH2",
         },
         body: JSON.stringify(data),
     })

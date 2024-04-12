@@ -136,29 +136,17 @@ function unhover(element) {
 // dark mode toggle
 const toggle = document.getElementById("dark-mode-toggle");
 
-
-// check website preference
+// check website preference from local storage or system preference
 var preference = localStorage.getItem("dark-mode");
-
 if (preference === null) {
 	preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
-console.log(preference);
-
-
-function toggleDarkMode(state) {
-	document.documentElement.classList.toggle("dark-mode", state);
-}
-
 
 // if preference is true
 if (preference === true || preference === "true") {
-	// check the toggle
 	toggle.checked = true;
-	// enable dark mode
 	dark();
 } else {
-	// disable dark mode
 	light();
 }
 
@@ -168,52 +156,38 @@ toggle.addEventListener("click", function () {
 	if (toggle.checked) {
 		console.log("checked");
 		dark();
-        // save preference
-        save_preference();
-
+		save_preference();
 	} else {
 		console.log("unchecked");
 		light();
-        // save preference
-        save_preference();
+		save_preference();
 	}
 });
+
+function toggleDarkMode(state) {
+	document.documentElement.classList.toggle("dark-mode", state);
+}
 
 function dark() {
 	toggleDarkMode(true);
 
-	// change logo
+	// change assets
 	document.getElementById("logo").setAttribute("src", "assets/logo-dark.png");
-
-	// change github icon
 	document.getElementById("github-logo").setAttribute("src", "assets/github-dark.png");
-
-	// change copy-to-clipboard icon
 	document.getElementById("copy-to-clipboard").setAttribute("src", "assets/copy-dark.png");
-
-	// change qr icon
 	document.getElementById("qr").setAttribute("src", "assets/qr-dark.png");
-
-	
 }
 
 function light() {
 	toggleDarkMode(false);
 
-	// change logo
+	// change assets
 	document.getElementById("logo").setAttribute("src", "assets/logo.png");
-
-	// change github icon
 	document.getElementById("github-logo").setAttribute("src", "assets/github.png");
-
-	// change copy-to-clipboard icon
 	document.getElementById("copy-to-clipboard").setAttribute("src", "assets/copy.png");
-
-	// change qr icon
 	document.getElementById("qr").setAttribute("src", "assets/qr.png");
-
-	
 }
+
 // call to save preference
 save_preference = () => {
 	localStorage.setItem("dark-mode", toggle.checked);
@@ -221,13 +195,9 @@ save_preference = () => {
 
 // ---------------- QR CODE MODAL ----------------
 
-// Get the modal
+// Get the modal, button and span
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("qr-btn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal

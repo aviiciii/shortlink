@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7LH3W5CSR"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<head>
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-P7LH3W5CSR"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-        gtag('config', 'G-P7LH3W5CSR');
-        </script>
+			gtag("config", "G-P7LH3W5CSR");
+		</script>
 
+		<!-- Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light dark" />
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="color-scheme" content="light dark">
-
-        <title>Shorten!</title>
-        <link rel="stylesheet" href="assets/styles.css" />
-        <link rel="icon" href="assets/favicon.png" />
-    </head>
+		<!-- Title -->
+		<title>Shorten!</title>
+		<link rel="stylesheet" href="assets/styles.css" />
+		<link rel="icon" href="assets/favicon.png" />
+	</head>
 
 	<body>
-        <!-- preloader -->
-        <div class="preloader">
-            <span class="preloader-text">Loading...</span>
-        </div>
+		<!-- preloader -->
+		<div class="preloader">
+			<span class="preloader-text">Loading...</span>
+		</div>
 
-        <!-- dark mode toggle -->
-        <div class="dark-mode-toggle">
-            <input type="checkbox" id="dark-mode-toggle" />
-            <label for="dark-mode-toggle">Dark Mode</label>
-        </div>
+		<!-- dark mode toggle -->
+		<div class="dark-mode-toggle">
+			<input type="checkbox" id="dark-mode-toggle" />
+			<label for="dark-mode-toggle">Dark Mode</label>
+		</div>
 
-        
-
-        <!-- form -->
+		<!-- form -->
 		<div class="login-box">
-            <img id="logo" src="assets/logo.png" alt="Shorten Logo">
-
+			<img id="logo" src="assets/logo.png" alt="Shorten Logo" />
 
 			<form>
-                <!-- long url -->
+				<!-- long url -->
 				<div class="user-box">
 					<input type="text" name="text" value id="linkinput" required="" autocomplete="off" />
 					<label>Url</label>
 				</div>
 
-                <!-- path -->
+				<!-- path -->
 				<div class="user-box">
 					<input type="text" name="path" value id="pathinput" required="" autocomplete="off" />
 					<label>Slug</label>
 				</div>
 
-                <!-- button -->
+				<!-- button -->
 				<a href="javascript:void(0);" id="myinput" value="Shorten">
 					<span></span>
 					<span></span>
@@ -64,42 +64,36 @@
 				</a>
 			</form>
 
-            <br>
+			<br />
 
-            <!-- shortened url box -->
-            <div class="msg row">
-                <div class="column left">
-                    <p id="message">link.laavesh.xyz/ </p>
-                </div>
-                <div class="column right">
-                    <button name="qr-btn" id="qr-btn"> <img id="qr"  src="assets/qr.png" alt="qr" /> </button>
-                    <button name="copy" id="copy"><img id="copy-to-clipboard" src="assets/copy.png" alt="copy"  /></button>
-                </div>
-            </div>
+			<!-- shortened url box -->
+			<div class="msg row">
+				<div class="column left">
+					<p id="message">link.laavesh.xyz/</p>
+				</div>
+				<div class="column right">
+					<button name="qr-btn" id="qr-btn"><img id="qr" src="assets/qr.png" alt="qr" /></button>
+					<button name="copy" id="copy"><img id="copy-to-clipboard" src="assets/copy.png" alt="copy" /></button>
+				</div>
+			</div>
 
-            <div class="links" >
-                <a href="https://github.com/aviiciii">
-                    <img id="github-logo" src="assets/github.png"/>
-                </a>
-            </div>
-
+			<div class="links">
+				<a href="https://github.com/aviiciii">
+					<img id="github-logo" src="assets/github.png" />
+				</a>
+			</div>
 		</div>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close"></span>
+				<img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?data=https://link.laavesh.xyz/&qzone=2&size=250x250&bgcolor=f1ede2" />
+			</div>
+		</div>
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close"></span>
-                <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?data=https://link.laavesh.xyz/&qzone=2&size=250x250&bgcolor=f1ede2" />
-            </div>
-        
-        </div>
-
-        <!-- link script -->
-        <script src="assets/script.js"></script>
-
-        
-
+		<!-- link script -->
+		<script src="assets/script.js"></script>
 	</body>
 </html>

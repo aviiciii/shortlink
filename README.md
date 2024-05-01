@@ -25,7 +25,7 @@ Note: Preferably use a subdomain so it doesn't take up the whole domain ie. **li
 4. Go to [api integrations](https://app.short.io/settings/integrations/api-key) in short.io and generate a public key.
 5. Open the `assets/script.js` file in a text editor.
 6. Replace the placeholder API key in the `'authorization'` field with your short.io API key.
-7. Rename the domain `'link.laavesh.ml'` to your own domain or subdomain in the following files:
+7. Rename the domain `'link.laavesh.xyz'` to your own domain or subdomain in the following files:
    - `index.html`
    - `assets/script.js`
 
